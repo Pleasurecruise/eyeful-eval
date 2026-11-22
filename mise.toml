@@ -1,0 +1,19 @@
+[tools]
+python = "latest"
+pi = "1.6.0"
+ruff = "0.17.6"
+
+[env]
+PYTHONPATH = "{{config_root}}/eval"
+
+[tasks.test]
+description = "Run the evaluation's tests"
+run = "python3 -m unittest discover --quiet -s eval/tests -t eval"
+
+[tasks.lint]
+description = "Check the evaluation's code and its formatting"
+run = ["ruff check eval", "ruff format --check eval"]
+
+[tasks.format]
+description = "Format the evaluation's code and fix what ruff can"
+run = ["ruff check --fix eval", "ruff format eval"]

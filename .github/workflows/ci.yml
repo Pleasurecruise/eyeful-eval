@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: install the toolchain
+        uses: jdx/mise-action@v5
+
+      - name: lint
+        run: mise run lint
+
+      - name: test
+        run: mise run test

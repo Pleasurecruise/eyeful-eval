@@ -1,0 +1,286 @@
+{
+  "setup": {
+    "dataset": [
+      "crb"
+    ],
+    "eyeful": {
+      "binary": "eyeful-61c1b8b",
+      "sha256": "afc0824602ef900eec97680e6197054c433d9b711c402bf75e147d35d2507264"
+    },
+    "agent": {
+      "pi": "1.6.0",
+      "model": "opencode-go/deepseek-v4.1-flash:medium"
+    },
+    "host": "macOS-27.3-arm64-arm-64bit-Mach-O"
+  },
+  "invocations": [
+    {
+      "configs": "panel,single",
+      "reps": 3,
+      "conditions": "execution,read_only,none",
+      "ids": "",
+      "commit": "c8f9d5516becd6b8d6a259627c93d3619fb40d80",
+      "started": "2026-11-21T19:58:35+00:00",
+      "finished": null,
+      "scripts": "70dd6546314e226639ce051f37b2bd4500f819ffcaaa8a7f363771d2ae8bd849",
+      "note": "Stopped 2026-11-22T11:11:41Z: keycloak__keycloak-37429 single-2 execution failed 3 times (its generalist ran past the 15-minute agent limit) and run.py then ended the run. From the next invocation a review whose retries run out is recorded as failed and the run goes on; that attempt was restored as the review's failed result.",
+      "subjects": {
+        "ai-code-review-evaluation__keycloak-greptile-1": {
+          "base": "30f804af450dec523909a52f2a4b97302d27f5cc",
+          "head": "3214b188de808fdb0fff335556b686f1b0a63218"
+        },
+        "keycloak__keycloak-32918": {
+          "base": "272cfc68dcc88615396ae62ed1571918e9c58ad3",
+          "head": "e944e2acf1e64421860a8e827f93ad06c169621b"
+        },
+        "keycloak__keycloak-33832": {
+          "base": "10aca5552314d6e5c9226f3c6d0107861c38c693",
+          "head": "79d11c4890cc4792e3dc3535af59e4e5f7a2739d"
+        },
+        "keycloak__keycloak-36880": {
+          "base": "b7b84d75d16e91d3f56ec527a260c53c5dd4396c",
+          "head": "1950a511026d520a7329c7b6b9ee60a4af8f8b55"
+        },
+        "keycloak__keycloak-36882": {
+          "base": "1b28ac610dc16e0de14199f9ca5d2acdf7f3cc16",
+          "head": "62bf98939eda58f0d0a1a41a58aa6d4ecdc24dba"
+        },
+        "keycloak__keycloak-37038": {
+          "base": "7ea067aae9be56cb2622bce6563864817c3dfeaf",
+          "head": "7355f05e6aafe2a7acc6434fb40c686665416606"
+        },
+        "keycloak__keycloak-37429": {
+          "base": "f3c8e8f3487112f2c99aa78400430cce2d30be39",
+          "head": "02f48f776f43734d1ac8914d3ad6a7115acdcb33"
+        },
+        "keycloak__keycloak-37634": {
+          "base": "c22f76867f595f0f7c327376a66a08dca01949e8",
+          "head": "daffb05b5ad091d3ec09933c3c99c2b54f448696"
+        },
+        "keycloak__keycloak-38446": {
+          "base": "85737f52b59aa2e3403c9b8e48acf71ccc5bfae3",
+          "head": "ce2dcc537b4b1f98a335e88cfe8e0b804483252a"
+        },
+        "keycloak__keycloak-40940": {
+          "base": "7fd37690c44c7068cb19ecee3aa6ff99c46a821d",
+          "head": "4def149a50c4b9b2c24fbb753ac60fe4f4df0cac"
+        }
+      }
+    },
+    {
+      "configs": "panel,single",
+      "reps": 3,
+      "conditions": "execution,read_only,none",
+      "ids": "",
+      "commit": "1c764676861dcb76d0b41ad0e533d7d7e4d1bbf6",
+      "scripts": "cc6b2d128f7f2a2c5eb9866073d41134567dfbb0989724707059dd6d433e19aa",
+      "started": "2026-11-22T12:59:15+00:00",
+      "finished": null,
+      "note": "Paused 2026-11-22T15:47Z by stopping the process group, to run SWE-bench first; keycloak__keycloak-37634 single-1 execution was cut off mid-review and moved to execution-interrupted-1, not counted as a failed attempt. The run resumes from here.",
+      "subjects": {
+        "ai-code-review-evaluation__keycloak-greptile-1": {
+          "base": "30f804af450dec523909a52f2a4b97302d27f5cc",
+          "head": "3214b188de808fdb0fff335556b686f1b0a63218"
+        },
+        "keycloak__keycloak-32918": {
+          "base": "272cfc68dcc88615396ae62ed1571918e9c58ad3",
+          "head": "e944e2acf1e64421860a8e827f93ad06c169621b"
+        },
+        "keycloak__keycloak-33832": {
+          "base": "10aca5552314d6e5c9226f3c6d0107861c38c693",
+          "head": "79d11c4890cc4792e3dc3535af59e4e5f7a2739d"
+        },
+        "keycloak__keycloak-36880": {
+          "base": "b7b84d75d16e91d3f56ec527a260c53c5dd4396c",
+          "head": "1950a511026d520a7329c7b6b9ee60a4af8f8b55"
+        },
+        "keycloak__keycloak-36882": {
+          "base": "1b28ac610dc16e0de14199f9ca5d2acdf7f3cc16",
+          "head": "62bf98939eda58f0d0a1a41a58aa6d4ecdc24dba"
+        },
+        "keycloak__keycloak-37038": {
+          "base": "7ea067aae9be56cb2622bce6563864817c3dfeaf",
+          "head": "7355f05e6aafe2a7acc6434fb40c686665416606"
+        },
+        "keycloak__keycloak-37429": {
+          "base": "f3c8e8f3487112f2c99aa78400430cce2d30be39",
+          "head": "02f48f776f43734d1ac8914d3ad6a7115acdcb33"
+        },
+        "keycloak__keycloak-37634": {
+          "base": "c22f76867f595f0f7c327376a66a08dca01949e8",
+          "head": "daffb05b5ad091d3ec09933c3c99c2b54f448696"
+        },
+        "keycloak__keycloak-38446": {
+          "base": "85737f52b59aa2e3403c9b8e48acf71ccc5bfae3",
+          "head": "ce2dcc537b4b1f98a335e88cfe8e0b804483252a"
+        },
+        "keycloak__keycloak-40940": {
+          "base": "7fd37690c44c7068cb19ecee3aa6ff99c46a821d",
+          "head": "4def149a50c4b9b2c24fbb753ac60fe4f4df0cac"
+        }
+      }
+    },
+    {
+      "configs": "panel",
+      "reps": 1,
+      "conditions": "execution,read_only,none",
+      "ids": "",
+      "subjects": {
+        "ai-code-review-evaluation__keycloak-greptile-1": {
+          "base": "30f804af450dec523909a52f2a4b97302d27f5cc",
+          "head": "3214b188de808fdb0fff335556b686f1b0a63218"
+        },
+        "keycloak__keycloak-32918": {
+          "base": "272cfc68dcc88615396ae62ed1571918e9c58ad3",
+          "head": "e944e2acf1e64421860a8e827f93ad06c169621b"
+        },
+        "keycloak__keycloak-33832": {
+          "base": "10aca5552314d6e5c9226f3c6d0107861c38c693",
+          "head": "79d11c4890cc4792e3dc3535af59e4e5f7a2739d"
+        },
+        "keycloak__keycloak-36880": {
+          "base": "b7b84d75d16e91d3f56ec527a260c53c5dd4396c",
+          "head": "1950a511026d520a7329c7b6b9ee60a4af8f8b55"
+        },
+        "keycloak__keycloak-36882": {
+          "base": "1b28ac610dc16e0de14199f9ca5d2acdf7f3cc16",
+          "head": "62bf98939eda58f0d0a1a41a58aa6d4ecdc24dba"
+        },
+        "keycloak__keycloak-37038": {
+          "base": "7ea067aae9be56cb2622bce6563864817c3dfeaf",
+          "head": "7355f05e6aafe2a7acc6434fb40c686665416606"
+        },
+        "keycloak__keycloak-37429": {
+          "base": "f3c8e8f3487112f2c99aa78400430cce2d30be39",
+          "head": "02f48f776f43734d1ac8914d3ad6a7115acdcb33"
+        },
+        "keycloak__keycloak-37634": {
+          "base": "c22f76867f595f0f7c327376a66a08dca01949e8",
+          "head": "daffb05b5ad091d3ec09933c3c99c2b54f448696"
+        },
+        "keycloak__keycloak-38446": {
+          "base": "85737f52b59aa2e3403c9b8e48acf71ccc5bfae3",
+          "head": "ce2dcc537b4b1f98a335e88cfe8e0b804483252a"
+        },
+        "keycloak__keycloak-40940": {
+          "base": "7fd37690c44c7068cb19ecee3aa6ff99c46a821d",
+          "head": "4def149a50c4b9b2c24fbb753ac60fe4f4df0cac"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-23T23:10:22+00:00",
+      "finished": "2026-11-24T00:00:19+00:00"
+    },
+    {
+      "configs": "single",
+      "reps": 3,
+      "conditions": "execution,read_only,none",
+      "ids": "",
+      "subjects": {
+        "ai-code-review-evaluation__keycloak-greptile-1": {
+          "base": "30f804af450dec523909a52f2a4b97302d27f5cc",
+          "head": "3214b188de808fdb0fff335556b686f1b0a63218"
+        },
+        "keycloak__keycloak-32918": {
+          "base": "272cfc68dcc88615396ae62ed1571918e9c58ad3",
+          "head": "e944e2acf1e64421860a8e827f93ad06c169621b"
+        },
+        "keycloak__keycloak-33832": {
+          "base": "10aca5552314d6e5c9226f3c6d0107861c38c693",
+          "head": "79d11c4890cc4792e3dc3535af59e4e5f7a2739d"
+        },
+        "keycloak__keycloak-36880": {
+          "base": "b7b84d75d16e91d3f56ec527a260c53c5dd4396c",
+          "head": "1950a511026d520a7329c7b6b9ee60a4af8f8b55"
+        },
+        "keycloak__keycloak-36882": {
+          "base": "1b28ac610dc16e0de14199f9ca5d2acdf7f3cc16",
+          "head": "62bf98939eda58f0d0a1a41a58aa6d4ecdc24dba"
+        },
+        "keycloak__keycloak-37038": {
+          "base": "7ea067aae9be56cb2622bce6563864817c3dfeaf",
+          "head": "7355f05e6aafe2a7acc6434fb40c686665416606"
+        },
+        "keycloak__keycloak-37429": {
+          "base": "f3c8e8f3487112f2c99aa78400430cce2d30be39",
+          "head": "02f48f776f43734d1ac8914d3ad6a7115acdcb33"
+        },
+        "keycloak__keycloak-37634": {
+          "base": "c22f76867f595f0f7c327376a66a08dca01949e8",
+          "head": "daffb05b5ad091d3ec09933c3c99c2b54f448696"
+        },
+        "keycloak__keycloak-38446": {
+          "base": "85737f52b59aa2e3403c9b8e48acf71ccc5bfae3",
+          "head": "ce2dcc537b4b1f98a335e88cfe8e0b804483252a"
+        },
+        "keycloak__keycloak-40940": {
+          "base": "7fd37690c44c7068cb19ecee3aa6ff99c46a821d",
+          "head": "4def149a50c4b9b2c24fbb753ac60fe4f4df0cac"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-24T00:00:19+00:00",
+      "finished": "2026-11-24T02:13:54+00:00"
+    },
+    {
+      "configs": "fixed",
+      "reps": 1,
+      "conditions": "execution,read_only,none",
+      "ids": "",
+      "subjects": {
+        "ai-code-review-evaluation__keycloak-greptile-1": {
+          "base": "30f804af450dec523909a52f2a4b97302d27f5cc",
+          "head": "3214b188de808fdb0fff335556b686f1b0a63218"
+        },
+        "keycloak__keycloak-32918": {
+          "base": "272cfc68dcc88615396ae62ed1571918e9c58ad3",
+          "head": "e944e2acf1e64421860a8e827f93ad06c169621b"
+        },
+        "keycloak__keycloak-33832": {
+          "base": "10aca5552314d6e5c9226f3c6d0107861c38c693",
+          "head": "79d11c4890cc4792e3dc3535af59e4e5f7a2739d"
+        },
+        "keycloak__keycloak-36880": {
+          "base": "b7b84d75d16e91d3f56ec527a260c53c5dd4396c",
+          "head": "1950a511026d520a7329c7b6b9ee60a4af8f8b55"
+        },
+        "keycloak__keycloak-36882": {
+          "base": "1b28ac610dc16e0de14199f9ca5d2acdf7f3cc16",
+          "head": "62bf98939eda58f0d0a1a41a58aa6d4ecdc24dba"
+        },
+        "keycloak__keycloak-37038": {
+          "base": "7ea067aae9be56cb2622bce6563864817c3dfeaf",
+          "head": "7355f05e6aafe2a7acc6434fb40c686665416606"
+        },
+        "keycloak__keycloak-37429": {
+          "base": "f3c8e8f3487112f2c99aa78400430cce2d30be39",
+          "head": "02f48f776f43734d1ac8914d3ad6a7115acdcb33"
+        },
+        "keycloak__keycloak-37634": {
+          "base": "c22f76867f595f0f7c327376a66a08dca01949e8",
+          "head": "daffb05b5ad091d3ec09933c3c99c2b54f448696"
+        },
+        "keycloak__keycloak-38446": {
+          "base": "85737f52b59aa2e3403c9b8e48acf71ccc5bfae3",
+          "head": "ce2dcc537b4b1f98a335e88cfe8e0b804483252a"
+        },
+        "keycloak__keycloak-40940": {
+          "base": "7fd37690c44c7068cb19ecee3aa6ff99c46a821d",
+          "head": "4def149a50c4b9b2c24fbb753ac60fe4f4df0cac"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-24T02:13:54+00:00",
+      "finished": "2026-11-24T06:06:52+00:00"
+    }
+  ],
+  "outcomes": {
+    "complete": 143,
+    "leaked": 1,
+    "failed": 6
+  },
+  "design": "2026-11-22: the panel runs once and the single agent three times, to save time; the panel's second and third runs already made, 48 reviews, were removed. Subjects are recorded with each invocation, so subjects can be added."
+}

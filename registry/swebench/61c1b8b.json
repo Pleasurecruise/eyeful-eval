@@ -1,0 +1,1282 @@
+{
+  "setup": {
+    "dataset": [
+      "swebench"
+    ],
+    "eyeful": {
+      "binary": "eyeful-61c1b8b",
+      "sha256": "afc0824602ef900eec97680e6197054c433d9b711c402bf75e147d35d2507264"
+    },
+    "agent": {
+      "pi": "1.6.0",
+      "model": "opencode-go/deepseek-v4.1-flash:medium"
+    },
+    "host": "macOS-27.3-arm64-arm-64bit-Mach-O"
+  },
+  "invocations": [
+    {
+      "configs": "panel,single",
+      "reps": 3,
+      "conditions": "execution,read_only,none",
+      "ids": "django__django-11138,django__django-11885,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "commit": "1eff75a15c49c833a71af1872e657a3c8adfbc02",
+      "scripts": "55b30d7b6c247a0fd5e4ba1c7394922073337faed03b8955dad22f6756baa70b",
+      "started": "2026-11-22T15:50:30+00:00",
+      "finished": null,
+      "note": "Stopped after one finished review to read merged comments' verdicts correctly (b184438); django__django-11138 panel-1 read_only was cut off and moved to read_only-interrupted-1. The next invocation re-reads every finished review with the fix.",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      }
+    },
+    {
+      "configs": "panel,single",
+      "reps": 3,
+      "conditions": "execution,read_only,none",
+      "ids": "django__django-11138,django__django-11885,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "commit": "b184438072828ec0c7f6a4d55f55841af299540c",
+      "scripts": "44a7e473586a9130d58b402b076f5c88d96ef852aded5bb52bc7d91606253727",
+      "started": "2026-11-22T16:14:41+00:00",
+      "finished": null,
+      "note": "Stopped to carry the finders' leaks into read_only and none (e3257e1); no finished review changed. django__django-11885 panel-2 execution was cut off and moved to execution-interrupted-1.",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      }
+    },
+    {
+      "configs": "panel,single",
+      "reps": 3,
+      "conditions": "execution,read_only,none",
+      "ids": "django__django-11138,django__django-11885,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "commit": "e3257e119f95fd2c47444a9836e5b4eda6b8dc16",
+      "scripts": "a2a3c50a3d880c6f90e802bf5d18a22297272bca7111615e2b46858482a9dea5",
+      "started": "2026-11-22T18:44:08+00:00",
+      "finished": null,
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      }
+    },
+    {
+      "configs": "panel",
+      "reps": 1,
+      "conditions": "execution,read_only,none",
+      "ids": "django__django-11138,django__django-11885,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      },
+      "commit": "678df1a53285f243e4143e5bca0797d9557e7813",
+      "scripts": "fc068c70379f72b45c6d48296c65ae2e6cc18f9cf439fab0ce443efe8cc9bea7",
+      "started": "2026-11-22T21:40:44+00:00",
+      "finished": null
+    },
+    {
+      "configs": "panel",
+      "reps": 1,
+      "conditions": "execution,none",
+      "ids": "django__django-11138,django__django-11740,django__django-11790,django__django-11880,django__django-11885,django__django-11964,django__django-12754,django__django-13121,django__django-13279,django__django-13512,django__django-13809,django__django-15315,django__django-15563,django__django-15695,django__django-15957,django__django-16100,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11740": {
+          "base": "aed41fdafc0636104358a600e39c1800b1551b89",
+          "head": "167e29640593fd41492409118d7aa1f10ea6ef36"
+        },
+        "django__django-11790": {
+          "base": "68c9a6cb23a927772d51d682fb085685812c5968",
+          "head": "23f71687a45e0dd1d02d02d5b5de23b817e08e6f"
+        },
+        "django__django-11880": {
+          "base": "8a22f90962e663b3b823be4a41ab0624040a86fc",
+          "head": "d3cd95292a274b66b86ab51567d3a18a3a50a3b7"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-11964": {
+          "base": "2cd24b1c5e27c1968972618ddf34c102f8980045",
+          "head": "f9666b2d015e07d3ddabcdc2c4d377f909a4bc7d"
+        },
+        "django__django-12754": {
+          "base": "577f983b913c0d58888612c6606441499af3596b",
+          "head": "76f6f5518a86be9e1fb3fdd55edfdf922fe359bd"
+        },
+        "django__django-13121": {
+          "base": "2e4187dd3f973832a0f7f2ff291b66fdf92588dd",
+          "head": "975ffd003ff3fecbd429d04d01c072563713d3f5"
+        },
+        "django__django-13279": {
+          "base": "70ad92a6e9186ec1783be8133931a79d02666d75",
+          "head": "df8793a9a258509eaa0afebdc227abb5a1aa6831"
+        },
+        "django__django-13512": {
+          "base": "7dff35983b3975e3a225d0dd4a71d8f177db25bc",
+          "head": "03a30e8f56eb4180f07b1b6a96bb6fd7107f8446"
+        },
+        "django__django-13809": {
+          "base": "43f2cf976732ed71bedf83d7c2d774135a764434",
+          "head": "11a609ad4c5d4a6c230716ebfd85ccc3a2d45b33"
+        },
+        "django__django-15315": {
+          "base": "c91643a1601012edc70a68ccf9fd72c62fb1b5bd",
+          "head": "d61a46e60770ac81948094f00433d0be081799cc"
+        },
+        "django__django-15563": {
+          "base": "ca2bf82ab95a23f3ff8ad70f4fc950ceb7f53df0",
+          "head": "4c3e1db81ca117cbc8316ce539afacdcc878d9cd"
+        },
+        "django__django-15695": {
+          "base": "ba447dc9cbc06d8f74780706e90fcdfda8c8a9b4",
+          "head": "859c2d0cdc2d03ee4fcb5b9957bf0805e40d533d"
+        },
+        "django__django-15957": {
+          "base": "40c3dd29565965a24358b4cfc09a37320f227e15",
+          "head": "9f58c6b980d734f6d31783e81cabd38bc34e7103"
+        },
+        "django__django-16100": {
+          "base": "8a0d21b3d97a144ed7c11a761de8e592ba7869b9",
+          "head": "d8a1c4b3bb2c641272a74476d58dec81aca9614e"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      },
+      "commit": "c6eafe8b5ec6bd5c239c1653dfa925791d3a8fe4",
+      "scripts": "8a35a03340a55d3c6e7fe6e0fa16285b713156a637ed47196e62aa3285967eca",
+      "started": "2026-11-22T22:49:22+00:00",
+      "finished": "2026-11-23T03:01:15+00:00"
+    },
+    {
+      "configs": "single",
+      "reps": 3,
+      "conditions": "execution,none",
+      "ids": "django__django-11138,django__django-11740,django__django-11790,django__django-11880,django__django-11885,django__django-11964,django__django-12754,django__django-13121,django__django-13279,django__django-13512,django__django-13809,django__django-15315,django__django-15563,django__django-15695,django__django-15957,django__django-16100,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11740": {
+          "base": "aed41fdafc0636104358a600e39c1800b1551b89",
+          "head": "167e29640593fd41492409118d7aa1f10ea6ef36"
+        },
+        "django__django-11790": {
+          "base": "68c9a6cb23a927772d51d682fb085685812c5968",
+          "head": "23f71687a45e0dd1d02d02d5b5de23b817e08e6f"
+        },
+        "django__django-11880": {
+          "base": "8a22f90962e663b3b823be4a41ab0624040a86fc",
+          "head": "d3cd95292a274b66b86ab51567d3a18a3a50a3b7"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-11964": {
+          "base": "2cd24b1c5e27c1968972618ddf34c102f8980045",
+          "head": "f9666b2d015e07d3ddabcdc2c4d377f909a4bc7d"
+        },
+        "django__django-12754": {
+          "base": "577f983b913c0d58888612c6606441499af3596b",
+          "head": "76f6f5518a86be9e1fb3fdd55edfdf922fe359bd"
+        },
+        "django__django-13121": {
+          "base": "2e4187dd3f973832a0f7f2ff291b66fdf92588dd",
+          "head": "975ffd003ff3fecbd429d04d01c072563713d3f5"
+        },
+        "django__django-13279": {
+          "base": "70ad92a6e9186ec1783be8133931a79d02666d75",
+          "head": "df8793a9a258509eaa0afebdc227abb5a1aa6831"
+        },
+        "django__django-13512": {
+          "base": "7dff35983b3975e3a225d0dd4a71d8f177db25bc",
+          "head": "03a30e8f56eb4180f07b1b6a96bb6fd7107f8446"
+        },
+        "django__django-13809": {
+          "base": "43f2cf976732ed71bedf83d7c2d774135a764434",
+          "head": "11a609ad4c5d4a6c230716ebfd85ccc3a2d45b33"
+        },
+        "django__django-15315": {
+          "base": "c91643a1601012edc70a68ccf9fd72c62fb1b5bd",
+          "head": "d61a46e60770ac81948094f00433d0be081799cc"
+        },
+        "django__django-15563": {
+          "base": "ca2bf82ab95a23f3ff8ad70f4fc950ceb7f53df0",
+          "head": "4c3e1db81ca117cbc8316ce539afacdcc878d9cd"
+        },
+        "django__django-15695": {
+          "base": "ba447dc9cbc06d8f74780706e90fcdfda8c8a9b4",
+          "head": "859c2d0cdc2d03ee4fcb5b9957bf0805e40d533d"
+        },
+        "django__django-15957": {
+          "base": "40c3dd29565965a24358b4cfc09a37320f227e15",
+          "head": "9f58c6b980d734f6d31783e81cabd38bc34e7103"
+        },
+        "django__django-16100": {
+          "base": "8a0d21b3d97a144ed7c11a761de8e592ba7869b9",
+          "head": "d8a1c4b3bb2c641272a74476d58dec81aca9614e"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-23T03:01:15+00:00",
+      "finished": "2026-11-23T16:20:44+00:00"
+    },
+    {
+      "configs": "fixed",
+      "reps": 1,
+      "conditions": "execution,none",
+      "ids": "django__django-11138,django__django-11740,django__django-11790,django__django-11880,django__django-11885,django__django-11964,django__django-12754,django__django-13121,django__django-13279,django__django-13512,django__django-13809,django__django-15315,django__django-15563,django__django-15695,django__django-15957,django__django-16100,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11740": {
+          "base": "aed41fdafc0636104358a600e39c1800b1551b89",
+          "head": "167e29640593fd41492409118d7aa1f10ea6ef36"
+        },
+        "django__django-11790": {
+          "base": "68c9a6cb23a927772d51d682fb085685812c5968",
+          "head": "23f71687a45e0dd1d02d02d5b5de23b817e08e6f"
+        },
+        "django__django-11880": {
+          "base": "8a22f90962e663b3b823be4a41ab0624040a86fc",
+          "head": "d3cd95292a274b66b86ab51567d3a18a3a50a3b7"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-11964": {
+          "base": "2cd24b1c5e27c1968972618ddf34c102f8980045",
+          "head": "f9666b2d015e07d3ddabcdc2c4d377f909a4bc7d"
+        },
+        "django__django-12754": {
+          "base": "577f983b913c0d58888612c6606441499af3596b",
+          "head": "76f6f5518a86be9e1fb3fdd55edfdf922fe359bd"
+        },
+        "django__django-13121": {
+          "base": "2e4187dd3f973832a0f7f2ff291b66fdf92588dd",
+          "head": "975ffd003ff3fecbd429d04d01c072563713d3f5"
+        },
+        "django__django-13279": {
+          "base": "70ad92a6e9186ec1783be8133931a79d02666d75",
+          "head": "df8793a9a258509eaa0afebdc227abb5a1aa6831"
+        },
+        "django__django-13512": {
+          "base": "7dff35983b3975e3a225d0dd4a71d8f177db25bc",
+          "head": "03a30e8f56eb4180f07b1b6a96bb6fd7107f8446"
+        },
+        "django__django-13809": {
+          "base": "43f2cf976732ed71bedf83d7c2d774135a764434",
+          "head": "11a609ad4c5d4a6c230716ebfd85ccc3a2d45b33"
+        },
+        "django__django-15315": {
+          "base": "c91643a1601012edc70a68ccf9fd72c62fb1b5bd",
+          "head": "d61a46e60770ac81948094f00433d0be081799cc"
+        },
+        "django__django-15563": {
+          "base": "ca2bf82ab95a23f3ff8ad70f4fc950ceb7f53df0",
+          "head": "4c3e1db81ca117cbc8316ce539afacdcc878d9cd"
+        },
+        "django__django-15695": {
+          "base": "ba447dc9cbc06d8f74780706e90fcdfda8c8a9b4",
+          "head": "859c2d0cdc2d03ee4fcb5b9957bf0805e40d533d"
+        },
+        "django__django-15957": {
+          "base": "40c3dd29565965a24358b4cfc09a37320f227e15",
+          "head": "9f58c6b980d734f6d31783e81cabd38bc34e7103"
+        },
+        "django__django-16100": {
+          "base": "8a0d21b3d97a144ed7c11a761de8e592ba7869b9",
+          "head": "d8a1c4b3bb2c641272a74476d58dec81aca9614e"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-23T16:20:45+00:00",
+      "finished": "2026-11-23T23:10:13+00:00"
+    },
+    {
+      "configs": "panel",
+      "reps": 1,
+      "conditions": "execution,none",
+      "ids": "django__django-11138,django__django-11740,django__django-11790,django__django-11880,django__django-11885,django__django-11964,django__django-12754,django__django-13121,django__django-13279,django__django-13512,django__django-13809,django__django-15315,django__django-15563,django__django-15695,django__django-15957,django__django-16100,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11740": {
+          "base": "aed41fdafc0636104358a600e39c1800b1551b89",
+          "head": "167e29640593fd41492409118d7aa1f10ea6ef36"
+        },
+        "django__django-11790": {
+          "base": "68c9a6cb23a927772d51d682fb085685812c5968",
+          "head": "23f71687a45e0dd1d02d02d5b5de23b817e08e6f"
+        },
+        "django__django-11880": {
+          "base": "8a22f90962e663b3b823be4a41ab0624040a86fc",
+          "head": "d3cd95292a274b66b86ab51567d3a18a3a50a3b7"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-11964": {
+          "base": "2cd24b1c5e27c1968972618ddf34c102f8980045",
+          "head": "f9666b2d015e07d3ddabcdc2c4d377f909a4bc7d"
+        },
+        "django__django-12754": {
+          "base": "577f983b913c0d58888612c6606441499af3596b",
+          "head": "76f6f5518a86be9e1fb3fdd55edfdf922fe359bd"
+        },
+        "django__django-13121": {
+          "base": "2e4187dd3f973832a0f7f2ff291b66fdf92588dd",
+          "head": "975ffd003ff3fecbd429d04d01c072563713d3f5"
+        },
+        "django__django-13279": {
+          "base": "70ad92a6e9186ec1783be8133931a79d02666d75",
+          "head": "df8793a9a258509eaa0afebdc227abb5a1aa6831"
+        },
+        "django__django-13512": {
+          "base": "7dff35983b3975e3a225d0dd4a71d8f177db25bc",
+          "head": "03a30e8f56eb4180f07b1b6a96bb6fd7107f8446"
+        },
+        "django__django-13809": {
+          "base": "43f2cf976732ed71bedf83d7c2d774135a764434",
+          "head": "11a609ad4c5d4a6c230716ebfd85ccc3a2d45b33"
+        },
+        "django__django-15315": {
+          "base": "c91643a1601012edc70a68ccf9fd72c62fb1b5bd",
+          "head": "d61a46e60770ac81948094f00433d0be081799cc"
+        },
+        "django__django-15563": {
+          "base": "ca2bf82ab95a23f3ff8ad70f4fc950ceb7f53df0",
+          "head": "4c3e1db81ca117cbc8316ce539afacdcc878d9cd"
+        },
+        "django__django-15695": {
+          "base": "ba447dc9cbc06d8f74780706e90fcdfda8c8a9b4",
+          "head": "859c2d0cdc2d03ee4fcb5b9957bf0805e40d533d"
+        },
+        "django__django-15957": {
+          "base": "40c3dd29565965a24358b4cfc09a37320f227e15",
+          "head": "9f58c6b980d734f6d31783e81cabd38bc34e7103"
+        },
+        "django__django-16100": {
+          "base": "8a0d21b3d97a144ed7c11a761de8e592ba7869b9",
+          "head": "d8a1c4b3bb2c641272a74476d58dec81aca9614e"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-23T23:10:13+00:00",
+      "finished": "2026-11-23T23:10:16+00:00"
+    },
+    {
+      "configs": "single",
+      "reps": 3,
+      "conditions": "execution,none",
+      "ids": "django__django-11138,django__django-11740,django__django-11790,django__django-11880,django__django-11885,django__django-11964,django__django-12754,django__django-13121,django__django-13279,django__django-13512,django__django-13809,django__django-15315,django__django-15563,django__django-15695,django__django-15957,django__django-16100,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11740": {
+          "base": "aed41fdafc0636104358a600e39c1800b1551b89",
+          "head": "167e29640593fd41492409118d7aa1f10ea6ef36"
+        },
+        "django__django-11790": {
+          "base": "68c9a6cb23a927772d51d682fb085685812c5968",
+          "head": "23f71687a45e0dd1d02d02d5b5de23b817e08e6f"
+        },
+        "django__django-11880": {
+          "base": "8a22f90962e663b3b823be4a41ab0624040a86fc",
+          "head": "d3cd95292a274b66b86ab51567d3a18a3a50a3b7"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-11964": {
+          "base": "2cd24b1c5e27c1968972618ddf34c102f8980045",
+          "head": "f9666b2d015e07d3ddabcdc2c4d377f909a4bc7d"
+        },
+        "django__django-12754": {
+          "base": "577f983b913c0d58888612c6606441499af3596b",
+          "head": "76f6f5518a86be9e1fb3fdd55edfdf922fe359bd"
+        },
+        "django__django-13121": {
+          "base": "2e4187dd3f973832a0f7f2ff291b66fdf92588dd",
+          "head": "975ffd003ff3fecbd429d04d01c072563713d3f5"
+        },
+        "django__django-13279": {
+          "base": "70ad92a6e9186ec1783be8133931a79d02666d75",
+          "head": "df8793a9a258509eaa0afebdc227abb5a1aa6831"
+        },
+        "django__django-13512": {
+          "base": "7dff35983b3975e3a225d0dd4a71d8f177db25bc",
+          "head": "03a30e8f56eb4180f07b1b6a96bb6fd7107f8446"
+        },
+        "django__django-13809": {
+          "base": "43f2cf976732ed71bedf83d7c2d774135a764434",
+          "head": "11a609ad4c5d4a6c230716ebfd85ccc3a2d45b33"
+        },
+        "django__django-15315": {
+          "base": "c91643a1601012edc70a68ccf9fd72c62fb1b5bd",
+          "head": "d61a46e60770ac81948094f00433d0be081799cc"
+        },
+        "django__django-15563": {
+          "base": "ca2bf82ab95a23f3ff8ad70f4fc950ceb7f53df0",
+          "head": "4c3e1db81ca117cbc8316ce539afacdcc878d9cd"
+        },
+        "django__django-15695": {
+          "base": "ba447dc9cbc06d8f74780706e90fcdfda8c8a9b4",
+          "head": "859c2d0cdc2d03ee4fcb5b9957bf0805e40d533d"
+        },
+        "django__django-15957": {
+          "base": "40c3dd29565965a24358b4cfc09a37320f227e15",
+          "head": "9f58c6b980d734f6d31783e81cabd38bc34e7103"
+        },
+        "django__django-16100": {
+          "base": "8a0d21b3d97a144ed7c11a761de8e592ba7869b9",
+          "head": "d8a1c4b3bb2c641272a74476d58dec81aca9614e"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-23T23:10:16+00:00",
+      "finished": "2026-11-23T23:10:20+00:00"
+    },
+    {
+      "configs": "fixed",
+      "reps": 1,
+      "conditions": "execution,none",
+      "ids": "django__django-11138,django__django-11740,django__django-11790,django__django-11880,django__django-11885,django__django-11964,django__django-12754,django__django-13121,django__django-13279,django__django-13512,django__django-13809,django__django-15315,django__django-15563,django__django-15695,django__django-15957,django__django-16100,django__django-16263,pallets__flask-5014,psf__requests-1142,psf__requests-2931,pydata__xarray-6992,pylint-dev__pylint-4551,pylint-dev__pylint-4970,pylint-dev__pylint-6903,pylint-dev__pylint-8898,pytest-dev__pytest-10051,pytest-dev__pytest-10081,pytest-dev__pytest-10356,pytest-dev__pytest-5631,pytest-dev__pytest-5787",
+      "subjects": {
+        "django__django-11138": {
+          "base": "5d8905d46564eb7b06da3454c5e7295adcc2e88e",
+          "head": "f064e2f4a413f09b7ccdfb15ba7c476ea09bfdb9"
+        },
+        "django__django-11740": {
+          "base": "aed41fdafc0636104358a600e39c1800b1551b89",
+          "head": "167e29640593fd41492409118d7aa1f10ea6ef36"
+        },
+        "django__django-11790": {
+          "base": "68c9a6cb23a927772d51d682fb085685812c5968",
+          "head": "23f71687a45e0dd1d02d02d5b5de23b817e08e6f"
+        },
+        "django__django-11880": {
+          "base": "8a22f90962e663b3b823be4a41ab0624040a86fc",
+          "head": "d3cd95292a274b66b86ab51567d3a18a3a50a3b7"
+        },
+        "django__django-11885": {
+          "base": "560a96a41298fddb70cb2531c4b1e4369a4d55ce",
+          "head": "c2b0d012f5d2e47f4c27c558418d6d1aa4b68c50"
+        },
+        "django__django-11964": {
+          "base": "2cd24b1c5e27c1968972618ddf34c102f8980045",
+          "head": "f9666b2d015e07d3ddabcdc2c4d377f909a4bc7d"
+        },
+        "django__django-12754": {
+          "base": "577f983b913c0d58888612c6606441499af3596b",
+          "head": "76f6f5518a86be9e1fb3fdd55edfdf922fe359bd"
+        },
+        "django__django-13121": {
+          "base": "2e4187dd3f973832a0f7f2ff291b66fdf92588dd",
+          "head": "975ffd003ff3fecbd429d04d01c072563713d3f5"
+        },
+        "django__django-13279": {
+          "base": "70ad92a6e9186ec1783be8133931a79d02666d75",
+          "head": "df8793a9a258509eaa0afebdc227abb5a1aa6831"
+        },
+        "django__django-13512": {
+          "base": "7dff35983b3975e3a225d0dd4a71d8f177db25bc",
+          "head": "03a30e8f56eb4180f07b1b6a96bb6fd7107f8446"
+        },
+        "django__django-13809": {
+          "base": "43f2cf976732ed71bedf83d7c2d774135a764434",
+          "head": "11a609ad4c5d4a6c230716ebfd85ccc3a2d45b33"
+        },
+        "django__django-15315": {
+          "base": "c91643a1601012edc70a68ccf9fd72c62fb1b5bd",
+          "head": "d61a46e60770ac81948094f00433d0be081799cc"
+        },
+        "django__django-15563": {
+          "base": "ca2bf82ab95a23f3ff8ad70f4fc950ceb7f53df0",
+          "head": "4c3e1db81ca117cbc8316ce539afacdcc878d9cd"
+        },
+        "django__django-15695": {
+          "base": "ba447dc9cbc06d8f74780706e90fcdfda8c8a9b4",
+          "head": "859c2d0cdc2d03ee4fcb5b9957bf0805e40d533d"
+        },
+        "django__django-15957": {
+          "base": "40c3dd29565965a24358b4cfc09a37320f227e15",
+          "head": "9f58c6b980d734f6d31783e81cabd38bc34e7103"
+        },
+        "django__django-16100": {
+          "base": "8a0d21b3d97a144ed7c11a761de8e592ba7869b9",
+          "head": "d8a1c4b3bb2c641272a74476d58dec81aca9614e"
+        },
+        "django__django-16263": {
+          "base": "66e4cbeaf127d0eddb0ef747279479c5115059cf",
+          "head": "164c9e25b16959bf98cd06ba6c0d94ad976c51bb"
+        },
+        "pallets__flask-5014": {
+          "base": "3183e4bf836dc08362d4c5ae9e0def6d5f9f2ed6",
+          "head": "c15649f6fdad0e4a91d45cf364c1cf0739aa6161"
+        },
+        "psf__requests-1142": {
+          "base": "a059568185b6f7cef603502dbaba28b4333a5be2",
+          "head": "c8144288a5a087b527b2f76aa2e861c9f592d4a3"
+        },
+        "psf__requests-1724": {
+          "base": "81d0f890a64522792074851324544126a48c4fd4",
+          "head": "e221caef3e3c4fcc82f064abf5f1d745219c5329"
+        },
+        "psf__requests-1766": {
+          "base": "ad52c931ca467c0202d8fb7bedbcaecc2167fb7c",
+          "head": "0d2d4424df752996ee2d8dc7935c1f441025dc51"
+        },
+        "psf__requests-1921": {
+          "base": "5c397c29ec5289aea5232165c709a92cc287dc86",
+          "head": "62142ce0343c62b7a2a7ab9cebb714e43b7c4906"
+        },
+        "psf__requests-2317": {
+          "base": "18f8a4de8e9394cf44c4ac585c46f1d1486bf14c",
+          "head": "beac0cb4d46a43790911a52fda11a9aff0cc5c7f"
+        },
+        "psf__requests-2931": {
+          "base": "be4f2cf25ab2f6bf35a88dd140d03fd832be655f",
+          "head": "2c3276757bd45f6670e1a56aadd5c6a7d73b1a1f"
+        },
+        "pydata__xarray-6992": {
+          "base": "38a3783198fa639a17d99a8e9b714961c427bc89",
+          "head": "38bf5cbb19e326776974046188387433eff6e6c5"
+        },
+        "pylint-dev__pylint-4551": {
+          "base": "65766958cf879bb2dfd5df3daa5e19780736347a",
+          "head": "bedbae8743bebfecc7c677dfa417fb41b5dd3516"
+        },
+        "pylint-dev__pylint-4970": {
+          "base": "327a06e7a217504c4f1f4f344d9aa3984de901fc",
+          "head": "c627ec5c6fd66b3c565e5e3ff404b1481628008c"
+        },
+        "pylint-dev__pylint-6903": {
+          "base": "62356c91912c4060a1709c78551ef99c8f90bf7f",
+          "head": "f32bcc2840e9c2724ecdafc71c185da425ee15bc"
+        },
+        "pylint-dev__pylint-8898": {
+          "base": "5a9441080914395ab16bb8798377963584270dbf",
+          "head": "5aa811ff655e8b5b2fa2dcac80eb6aed31194387"
+        },
+        "pytest-dev__pytest-10051": {
+          "base": "fcf3542881f355bcfefbfb3163e4098d612e87b4",
+          "head": "6828cf3e13eee5dfcfcfd4dff9958e07dcb7ffee"
+        },
+        "pytest-dev__pytest-10081": {
+          "base": "19476abc27fc10416453a763ad1f823576adb9d7",
+          "head": "8594e3eeeb025809780c0f62b08427d5d23833b2"
+        },
+        "pytest-dev__pytest-10356": {
+          "base": "37e1bf8f53ca705c42e53a0be1d45d8654053d7e",
+          "head": "df4fc4c70b3194a4a29f4a6601b395809bb14d00"
+        },
+        "pytest-dev__pytest-5631": {
+          "base": "ff0295e21a3d5e6a9d2bd95b4386a80a4850434c",
+          "head": "3c5866de7979d6e51420fd032e4410b56e295a8b"
+        },
+        "pytest-dev__pytest-5787": {
+          "base": "e8096fc13b280a5a8d3567c0fc5ba1c37186cb68",
+          "head": "d76f0279074733f202f46c974b23f5be00f652db"
+        }
+      },
+      "commit": "953f6b887e13756f730316c17037d31bf9f051f0",
+      "scripts": "4437e7c85f1c9d640792380750537b197768ce35c16949b213dd9a03de263fc5",
+      "started": "2026-11-23T23:10:20+00:00",
+      "finished": "2026-11-23T23:10:22+00:00"
+    }
+  ],
+  "outcomes": {
+    "complete": 294,
+    "leaked": 6,
+    "failed": 6
+  },
+  "design": "2026-11-22: the panel runs once and the single agent three times, to save time; the panel's second and third runs already made, 12 reviews, were removed. Subjects are recorded with each invocation, so the added subjects can join this run."
+}

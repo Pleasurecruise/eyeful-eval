@@ -1,0 +1,10 @@
+# Datasets, their repositories, eyeful builds, runs and scores (README.md)
+.eval/
+# eyeful's own run records, from reviewing in this directory
+.eyeful/
+
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.DS_Store
